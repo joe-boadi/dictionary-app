@@ -13,7 +13,6 @@ body{
     font-family: sans-serif;
 }
 
-
 header{
     width: 100%;
     max-width: 736px;
@@ -30,6 +29,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
 #search-section{
     border-radius: 16px;
     padding: 10px;
@@ -40,6 +40,7 @@ main{
     width: 100%;
     max-width: 736px;
 }
+
 input{
   padding: 10px;
   border: none;
@@ -51,18 +52,16 @@ input{
 input::placeholder{
     font-size: large;
     font-weight: 400;
-    color: #E9E9E9;
+    color: #757575;
 }
 
 #search-section:hover{
     border: 2px solid #A445ED;
 }
 
-
 #input:focus#search-section {
     border: 2px solid #A445ED;
 }
-
 
 nav{
    margin: 15px 0;
@@ -70,6 +69,11 @@ nav{
     align-items: center;
     gap: 20px;
 }
+
+.fontStyle{
+    border: none;
+}
+/* .fontStyle option */
 
 .switch {
     position: relative;
@@ -109,11 +113,11 @@ nav{
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #A445ED;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #A445ED;
   }
   
   input:checked + .slider:before {
@@ -134,6 +138,7 @@ nav{
 
   .search-button{
     width: 30px;
+    cursor: pointer;
   }
 
   .result ul li{
@@ -204,4 +209,32 @@ nav{
 
 footer{
  margin-top: 50px;
+}
+.dark-mode .moon-icon{
+    content: url('./assets/images/iconoir_half-moon.png');
+}
+
+/*DARK MODE*/
+.dark-mode{
+    background-color: #050505 ;
+    color: #FFFF;
+}
+
+.dark-mode #search-section{
+    background-color: #2D2D2D;
+}
+
+.dark-mode #search-input::placeholder{
+    color:#757575;
+}
+
+.dark-mode #search-input{
+    background-color: #2D2D2D;
+    color: #f4f4f4;
+    font-size: 16px;
+}
+
+.dark-mode .error-message p{
+    color:#757575;
+    margin: 10px 0;
 }
