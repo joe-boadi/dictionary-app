@@ -1,66 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: sans-serif;
 }
 
 header{
-    width: 100%;
-    max-width: 736px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+  width: 100%;
+  max-width: 736px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
 main{
-    width: 100%;
-    max-width: 736px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  max-width: 736px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #search-section{
-    border-radius: 16px;
-    padding: 10px;
-    background: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 736px;
+  border-radius: 16px;
+  padding: 10px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 736px;
 }
+#select-option #fontStyle{
+  margin-right: 10px;
+  border-radius: 16px;
+  padding: 0.7em 1em;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  font-size: 16px;
+  max-width: 100%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 
+    rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 
+    rgba(0, 0, 0, 0.19);
+}
+
 
 input{
   padding: 10px;
   border: none;
   background: transparent;
-    width: 100%;
-    outline: none;
+  width: 100%;
+  outline: none;
 }
 
 input::placeholder{
-    font-size: large;
-    font-weight: 400;
-    color: #757575;
+  font-size: large;
+  font-weight: 400;
+  color: #757575;
 }
 
 #search-section:hover{
-    border: 2px solid #A445ED;
+  border: 2px solid #A445ED;
 }
 
 #input:focus#search-section {
-    border: 2px solid #A445ED;
+  border: 2px solid #A445ED;
 }
 
 nav{
@@ -237,4 +256,20 @@ footer{
 .dark-mode .error-message p{
     color:#757575;
     margin: 10px 0;
+}
+
+.dark-mode #select-option #fontStyle{
+  background-color: #2D2D2D;
+  color:#757575;
+}
+
+.dark-mode #select-option #fontStyle:hover option{
+  background-color:#050505;
+  color: #757575;
+  box-shadow: 0 4px 8px 0 
+      rgba(214, 11, 228, 0.2), 
+      0 6px 20px 0 
+      rgba(214, 11, 228, 0.2);
+  border-radius: 7px;
+  cursor: pointer;
 }
